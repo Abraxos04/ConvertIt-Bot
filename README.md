@@ -5,7 +5,7 @@ This is a discord bot I have created using basic python and use of discord.py 2.
 ## How to run 
 
 This bot uses currency converter api to run- https://pypi.org/project/CurrencyConverter/.
-Also discord.py needs to bee installed for running the bot.
+Also discord.py needs to be installed for running the bot.
 
 ## Features
 
