@@ -38,8 +38,8 @@ async def on_guild_remove(guild):
     with open("prefixes.json","w") as f:
        json.dump(prefix,f,indent=4)
 
-@client.command()
-async def setprefix(ctx, *, newprefix: str):
+@client.hybrid_command(description="Set a new prefix for the bot in the server")
+async def setprefix(ctx, newprefix):
     with open("prefixes.json","r") as f:
         prefix = json.load(f)
     
