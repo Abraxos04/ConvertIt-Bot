@@ -20,11 +20,11 @@ Type "!c help" to see the list of commands.
 
 This bot uses discord.py to run. It also uses CurrencyConverter api to convert global currencies. The primary file of the bot is Bot.py. The functions of the bot is stored in the /cogs directory.
 
-## Demo video
+## Demonstration video
 
 This video demonstrates how to use the bot and its various functionalities
 
 
-https://user-images.githubusercontent.com/130379385/232581721-8a7fbc2a-f1b7-47aa-88df-98f65bcc6a6c.mp4
+https://user-images.githubusercontent.com/130379385/232581973-2b38692a-a8f9-43e4-a944-6176fd884434.mp4
 
 
