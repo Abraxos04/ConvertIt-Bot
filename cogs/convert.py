@@ -45,7 +45,9 @@ class convert(commands.Cog):
                     con2=-1
 
         out=amount*((1/con2)*con1)
-        if(round(out, 5)!=0.0):
+        if(round(out, 2)!=0.0):
+            out=round(out, 2)
+        elif(round(out, 2)!=0.0):
             out=round(out, 5)
         if(con1==-1):
             embed_message= discord.Embed(title="Error", description=f"{curr1} Currency does not exist", color=discord.Color.red())
