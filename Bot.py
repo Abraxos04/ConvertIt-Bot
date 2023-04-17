@@ -52,6 +52,7 @@ async def setprefix(ctx, *, newprefix: str):
 
 @client.event
 async def on_ready():
+    await client.tree.sync()
     print("Success: Bot is connected to Discord.")
 
 async def load():

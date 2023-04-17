@@ -9,12 +9,13 @@ class remove(commands.Cog):
     async def on_ready(self):
          print("remove.py is ready!")
     #!c add "currency" "value in EUR"
-    @commands.command()
-    async def remove (self, ctx, *args):
+    @commands.hybrid_command(description="Removes a custom currency for the server")
+    async def remove (self, ctx, name):
+        embed_message= discord.Embed(title=f"{name} currency removed.", color=discord.Color.brand_red())
         error=0
         with open("cogs/curr.json","r") as f:
             curren = json.load(f)   
-        curr=str(args[0])
+        curr=str(name)
         
         #print (curren)
         if(str(ctx.guild.id) not in curren):
@@ -23,7 +24,7 @@ class remove(commands.Cog):
         with open("cogs/curr.json","w") as f:
             json.dump(curren,f,indent=4)
 
-        await ctx.send(f"{curr} has been removed")         
+        await ctx.send(embed=embed_message)         
         
 
 async def setup(client):

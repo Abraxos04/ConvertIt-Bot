@@ -13,7 +13,7 @@ class support(commands.Cog):
     async def on_ready(self):
          print("support.py is ready!")
 
-    @commands.command()
+    @commands.hybrid_command(description="Shows list of supported currencies")
     async def support (self, ctx):
         embed_message= discord.Embed(title="List of Supported Currencies", description="You can add or remove currencies using the add or remove commands", color=discord.Color.random())
         

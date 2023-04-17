@@ -4,8 +4,8 @@ This is a discord bot I have created using basic python and use of discord.py 2.
 
 ## How to run 
 
-This bot uses currency converter api to run- https://pypi.org/project/CurrencyConverter/.
-Also discord.py needs to be installed for running the bot.
+Invite the bot to the server by clicking on this [link](https://discord.com/api/oauth2/authorize?client_id=1095402510690295958&permissions=8&scope=bot).
+Type !c help to see the list of commands.
 
 ## Features
 
@@ -14,3 +14,8 @@ Also discord.py needs to be installed for running the bot.
 3. Add your own custom currency with "!c add" command and remove using !c remove.
 4. Change prefix of bot in the server using "!c setprefix" command.
 5. See list of commands and how to use them using "!c help" command.
+6. You can also use slash commands instead of general text commands.
+
+## How it runs
+
+This bot uses discord.py to run. It also uses CurrencyConverter api to convert global currencies. The primary file of the bot is Bot.py. The functions of the bot is stored in the /cogs directory.

@@ -8,7 +8,7 @@ class Ping(commands.Cog):
     async def on_ready(self):
          print("Ping.py is ready!")
 
-    @commands.command()
+    @commands.hybrid_command(description="Prints the latency of the bot")
     async def ping (self, ctx):
         client_latency = round(self.client.latency * 1000)
         await ctx.send(f"Pong! {client_latency} ms.")   

@@ -15,11 +15,11 @@ class convert(commands.Cog):
     async def on_ready(self):
          print("convert.py is ready!")
     
-    @commands.command()
-    async def convert (self, ctx, *args):
-        amount= float(args[0])
-        curr1=args[1]
-        curr2=args[3]
+    @commands.hybrid_command(description="Carry out conversion from one currency to another.")
+    async def convert (self, ctx, amount, currencyfrom, currencyto):
+        amount= float(amount)
+        curr1=currencyfrom
+        curr2=currencyto
         serv=str(ctx.guild.id)
         with open("cogs/curr.json","r") as f:
             curren = json.load(f) 
