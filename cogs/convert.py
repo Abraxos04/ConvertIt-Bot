@@ -14,7 +14,7 @@ class convert(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
          print("convert.py is ready!")
-
+    
     @commands.command()
     async def convert (self, ctx, *args):
         amount= float(args[0])
@@ -47,7 +47,7 @@ class convert(commands.Cog):
         out=amount*((1/con2)*con1)
         if(round(out, 2)!=0.0):
             out=round(out, 2)
-        elif(round(out, 2)!=0.0):
+        elif(round(out, 5)!=0.0):
             out=round(out, 5)
         if(con1==-1):
             embed_message= discord.Embed(title="Error", description=f"{curr1} Currency does not exist", color=discord.Color.red())
