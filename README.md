@@ -5,7 +5,7 @@ This is a discord bot I have created using basic python and use of discord.py 2.
 ## How to run 
 
 Invite the bot to the server by clicking on this [link](https://discord.com/api/oauth2/authorize?client_id=1095402510690295958&permissions=8&scope=bot).
-Type !c help to see the list of commands.
+Type "!c help" to see the list of commands.
 
 ## Features
 
