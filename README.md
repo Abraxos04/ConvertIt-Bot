@@ -25,6 +25,6 @@ This bot uses discord.py to run. It also uses CurrencyConverter api to convert g
 This video demonstrates how to use the bot and its various functionalities
 
 
-https://user-images.githubusercontent.com/130379385/232581973-2b38692a-a8f9-43e4-a944-6176fd884434.mp4
+https://user-images.githubusercontent.com/130379385/232594070-d10edf3c-bea6-46e9-a2cb-b1cca6ed87d5.mp4
 
 
